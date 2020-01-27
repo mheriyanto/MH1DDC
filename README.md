@@ -14,3 +14,17 @@ M. Heriyanto and W. Srigutomo. 1-D DC resistivity inversion using singular value
 
 I hope these scripts can help students to enter research on geophysical inversion. 
 Any updates about these scripts can be seen in [my blog](https://mheriyanto.wordpress.com/mh1ddc/).
+
+## Citation
+If you find this project useful for your research, please use the following BibTeX entry.
+   
+@inproceedings{heriyanto20171,
+  title={1-D DC Resistivity Inversion Using Singular Value Decomposition and Levenberg-Marquardt’s Inversion Schemes},
+  author={Heriyanto, M and Srigutomo, W},
+  booktitle={Journal of Physics: Conference Series},
+  volume={877},
+  number={1},
+  pages={066},
+  year={2017},
+  organization={IOP Publishing}
+}

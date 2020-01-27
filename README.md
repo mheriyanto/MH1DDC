@@ -16,15 +16,19 @@ I hope these scripts can help students to enter research on geophysical inversio
 Any updates about these scripts can be seen in [my blog](https://mheriyanto.wordpress.com/mh1ddc/).
 
 ## Citation
+MH1DDC is released under the MIT License (refer to the LICENSE file for details).
+
+## Citation
 If you find this project useful for your research, please use the following BibTeX entry.
-   
-@inproceedings{heriyanto20171,
-  title={1-D DC Resistivity Inversion Using Singular Value Decomposition and Levenberg-Marquardt’s Inversion Schemes},
-  author={Heriyanto, M and Srigutomo, W},
-  booktitle={Journal of Physics: Conference Series},
-  volume={877},
-  number={1},
-  pages={066},
-  year={2017},
-  organization={IOP Publishing}
-}
+    
+    @inproceedings{heriyanto20171,
+    title={1-D DC Resistivity Inversion Using Singular Value Decomposition and Levenberg-Marquardt’s Inversion Schemes},
+    author={Heriyanto, M and Srigutomo, W},
+    booktitle={Journal of Physics: Conference Series},
+    volume={877},
+    number={1},
+    pages={066},
+    year={2017},
+    organization={IOP Publishing}
+    }
+    

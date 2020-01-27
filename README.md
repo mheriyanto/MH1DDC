@@ -1,7 +1,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/mheriyanto/MH1DDC)
 ![GitHub top language](https://img.shields.io/github/languages/top/mheriyanto/MH1DDC)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mheriyanto/MH1DDC)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ezygeo-ai/machine-learning-and-geophysical-inversion)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mheriyanto/MH1DDC)
 ![GitHub last commit](https://img.shields.io/github/last-commit/mheriyanto/MH1DDC.svg)
 [![HitCount](http://hits.dwyl.com/mheriyanto/MH1DDC.svg)](http://hits.dwyl.com/mheriyanto/MH1DDC)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555)](https://id.linkedin.com/in/mheriyanto)

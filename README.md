@@ -15,6 +15,14 @@ M. Heriyanto and W. Srigutomo. 1-D DC resistivity inversion using singular value
 I hope these scripts can help students to enter research on geophysical inversion. 
 Any updates about these scripts can be seen in [my blog](https://mheriyanto.wordpress.com/mh1ddc/).
 
+<ins>**Forward result**</ins>
+
+<p align="center">
+<img src="https://github.com/mheriyanto/MH1DDC/blob/master/forward/Model%201/Model%201.png" width="30%">
+<img src="https://github.com/mheriyanto/MH1DDC/blob/master/forward/Model%202/Model%202.png" width="30%">
+<img src="https://github.com/mheriyanto/MH1DDC/tree/master/forward/Model%203" width="30%">
+</p>
+
 ## License
 MH1DDC is released under the MIT License (refer to the [LICENSE](https://github.com/mheriyanto/MH1DDC/blob/master/LICENSE) file for details).
 

@@ -20,7 +20,7 @@ Any updates about these scripts can be seen in [my blog](https://mheriyanto.word
 <p align="center">
 <img src="https://github.com/mheriyanto/MH1DDC/blob/master/forward/Model%201/Model%201.png" width="30%">
 <img src="https://github.com/mheriyanto/MH1DDC/blob/master/forward/Model%202/Model%202.png" width="30%">
-<img src="https://github.com/mheriyanto/MH1DDC/tree/master/forward/Model%203" width="30%">
+<img src="https://github.com/mheriyanto/MH1DDC/blob/master/forward/Model%203/Model%203.png" width="30%">
 </p>
 
 ## License

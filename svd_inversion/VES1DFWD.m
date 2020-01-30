@@ -7,7 +7,7 @@ q = 13;
 f = 10;
 m = 4.438;
 x = 0;
-e = exp(log(10)/(2*m));
+e = exp((0.5*log(10))/m);
 h = 2*q-2;
 u = s*exp(-f*log(10)/m-x);      % 1/lamda
 l = length(r);
@@ -18,7 +18,7 @@ for i = 1:n+h
     T = r(l);               % T = T(lamda)
     while(w>1)
         w = w-1;
-        aa = tanh(t(w)/u);              % t(w) = depth 
+        aa = tanh(t(w)/u);              % t(w) = depth
         T = (T+r(w)*aa)/(1+T*aa/r(w));  % r = resistivity,    T = T(lamda) 
     end
 a(i) = T;
@@ -31,4 +31,4 @@ rho_a = rho_a-4390*a(i+10)+13396*a(i+12)-27841*a(i+14);
 rho_a = rho_a+16448*a(i+16)+8183*a(i+18)+2525*a(i+20);
 rho_a = (rho_a+336*a(i+22)+225*a(i+24))/10000;
 
-return
+returns

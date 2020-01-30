@@ -1,4 +1,10 @@
 % 1D Inversion of Schlumberger Sounding Data using Levenberg-Marquardt (LM) Method
+
+% Inspired by:
+% Ekinci Y L and Demirci A 2008 J. of Appl. Sciences 8 (22) : 4070-4078.
+% URL: https://scialert.net/abstract/?doi=jas.2008.4070.4078
+
+% Created by:
 % M. Heriyanto and W. Srigutomo. 2016. Journal of Physics: Conference Series 877 (2017) 012066.
 % URL: https://github.com/mheriyanto/MH1DDC
 
@@ -24,11 +30,11 @@ mmodel = [modelr modelt];
 % Inversion
 load data.txt;
 ab = data(:,1);              % space distance of electrode (AB/2)
-rhoa = data(:,2);            % resistivity for each electrode distance
+rhoa = data(:,2);            % resistivity for each electrode distance (observed)
 
 % initial model
 r = [50,50,50,50];           % initial resistivity (Ohm-m)    
-t = [20,20,20];              % thickness (m)
+t = [20,20,20];              % iniial thickness (m)
 m = [r,t];                   
 
 lr = length(r); lt = length(t); 
@@ -96,6 +102,7 @@ end
 [lamda] = gss_lm(m,0.001,10); 
 lamda_plot(j) = lamda;
 
+% save final result of inversion
 print('-dpng','LM Final Inversion','-r500');
 
 % plotting lamda vs rms error

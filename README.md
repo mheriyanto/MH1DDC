@@ -34,6 +34,16 @@ Any updates about these scripts can be seen in [my blog](https://mheriyanto.word
 <img src="https://github.com/mheriyanto/MH1DDC/blob/master/lm_inversion/Model%200/Plotting%20Lamda.png" width="40%">
 </p>
 
+<ins>**LM Inversion result: Model 1**</ins>
+
+<p align="center">
+<img src="https://github.com/mheriyanto/MH1DDC/blob/master/lm_inversion/Model%201/LM%20Final%20Inversion.png" width="70%">
+</p>
+
+<p align="center">
+<img src="https://github.com/mheriyanto/MH1DDC/blob/master/lm_inversion/Model%201/Plotting%20Inversion%20Parameter.png" width="40%">
+</p>
+
 ## License
 MH1DDC is released under the MIT License (refer to the [LICENSE](https://github.com/mheriyanto/MH1DDC/blob/master/LICENSE) file for details).
 

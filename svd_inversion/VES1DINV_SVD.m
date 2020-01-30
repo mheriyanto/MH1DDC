@@ -5,7 +5,8 @@
 % URL: https://scialert.net/abstract/?doi=jas.2008.4070.4078
 
 % Modified by:
-% M. Heriyanto and W. Srigutomo. 2016. Journal of Physics: Conference Series 877 (2017) 012066.
+% M. Heriyanto and W. Srigutomo. Journal of Physics: Conference Series 877 (2017) 012066.
+% Update:  2016-07-26
 % URL: https://github.com/mheriyanto/MH1DDC
 
 close all; clear all; clc;

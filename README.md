@@ -23,15 +23,15 @@ Any updates about these scripts can be seen in [my blog](https://mheriyanto.word
 <img src="https://github.com/mheriyanto/MH1DDC/blob/master/forward/Model%203/Model%203.png" width="30%">
 </p>
 
-<ins>**LM Inversion result: Model 3**</ins>
+<ins>**LM Inversion result: Model 0**</ins>
 
 <p align="center">
-<img src="https://github.com/mheriyanto/MH1DDC/blob/master/lm_inversion/Model%203/LM%20Final%20Inversion.png" width="70%">
+<img src="https://github.com/mheriyanto/MH1DDC/blob/master/lm_inversion/Model%200/LM%20Final%20Inversion.png" width="70%">
 </p>
 
 <p align="center">
-<img src="https://github.com/mheriyanto/MH1DDC/blob/master/lm_inversion/Model%203/Plotting%20Inversion%20Parameter.png" width="50%">
-<img src="https://github.com/mheriyanto/MH1DDC/blob/master/lm_inversion/Model%203/Plotting%20Lamda.png" width="50%">
+<img src="https://github.com/mheriyanto/MH1DDC/blob/master/lm_inversion/Model%200/Plotting%20Inversion%20Parameter.png" width="40%">
+<img src="https://github.com/mheriyanto/MH1DDC/blob/master/lm_inversion/Model%200/Plotting%20Lamda.png" width="40%">
 </p>
 
 ## License

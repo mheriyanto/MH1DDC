@@ -10,10 +10,10 @@
 MH1DDC is inversion software using Levenberg-Marquardt (LM) and Singular Value Decomposition (SVD) of one-dimension DC resistivity using in MATLAB.
 
 These were scripts that were used to implement our proceeding paper:
-M. Heriyanto and W. Srigutomo. 1-D DC resistivity inversion using singular value decomposition and Levenberg-Marquardt inversion schemes. Journal of Physics: Conference Series 877 (**2017**) 012066. doi:10.1088/1742-6596/877/1/012066 ([**PDF**](https://iopscience.iop.org/article/10.1088/1742-6596/877/1/012066/pdf)). I presented this paper on International Conference on Energy Sciences 2016. July 27, 2016 ([**SLIDE**](https://figshare.com/articles/1-D_DC_Resistivity_Inversion_Using_Singular_Value_Decomposition_and_Levenberg-Marquardt_s_Inversion_Schemes/4644637)). These scripts contain three main scripts: [**forward**](https://github.com/mheriyanto/MH1DDC/tree/master/forward), [**LM**](https://github.com/mheriyanto/MH1DDC/tree/master/lm_inversion), and **SVD** inversion. 
+M. Heriyanto and W. Srigutomo. 1-D DC resistivity inversion using singular value decomposition and Levenberg-Marquardt inversion schemes. Journal of Physics: Conference Series 877 (**2017**) 012066. doi:10.1088/1742-6596/877/1/012066 ([**PDF**](https://iopscience.iop.org/article/10.1088/1742-6596/877/1/012066/pdf)). I presented this paper on International Conference on Energy Sciences 2016. July 27, 2016 ([**SLIDE**](https://figshare.com/articles/1-D_DC_Resistivity_Inversion_Using_Singular_Value_Decomposition_and_Levenberg-Marquardt_s_Inversion_Schemes/4644637)). These scripts contain three main scripts: [**forward**](https://github.com/mheriyanto/MH1DDC/tree/master/forward), [**LM**](https://github.com/mheriyanto/MH1DDC/tree/master/lm_inversion), and [**SVD**](https://github.com/mheriyanto/MH1DDC/tree/master/svd_inversion) inversion. 
 
 I hope these scripts can help students to enter research on geophysical inversion. 
-Any updates about these scripts can be seen in [my blog](https://mheriyanto.wordpress.com/mh1ddc/).
+Any updates about these scripts can be seen in [my blog](https://mheriyanto.wordpress.com/mh1ddc/): https://mheriyanto.wordpress.com/mh1ddc.
 
 <ins>**Forward result**</ins>
 
@@ -42,6 +42,26 @@ Any updates about these scripts can be seen in [my blog](https://mheriyanto.word
 
 <p align="center">
 <img src="https://github.com/mheriyanto/MH1DDC/blob/master/lm_inversion/Model%201/Plotting%20Inversion%20Parameter.png" width="40%">
+</p>
+
+<ins>**SVD Inversion result: Model 1**</ins>
+
+<p align="center">
+<img src="https://github.com/mheriyanto/MH1DDC/blob/master/svd_inversion/Model%201/SVD%20Final%20Inversion.png" width="70%">
+</p>
+
+<p align="center">
+<img src="https://github.com/mheriyanto/MH1DDC/blob/master/svd_inversion/Model%201/Plotting%20Inversion%20Parameter.png" width="40%">
+</p>
+
+<ins>**SVD Inversion result: Model 3**</ins>
+
+<p align="center">
+<img src="https://github.com/mheriyanto/MH1DDC/blob/master/svd_inversion/Model%203/Inversi%20SVD%20Final.png" width="70%">
+</p>
+
+<p align="center">
+<img src="https://github.com/mheriyanto/MH1DDC/blob/master/svd_inversion/Model%203/Plotting%20Inversion%20Parameter.png" width="40%">
 </p>
 
 ## License

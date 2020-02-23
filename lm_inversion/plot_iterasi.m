@@ -1,10 +1,9 @@
-function plot_iterasi(m,roacal,iter);
+function plot_iterasi(m,roacal,iter)
 %Plotting iteration Summary of this function goes here
 %   Detailed explanation goes here
 
 global ab;
 global rhoa;
-global models;
 global modelr;
 global modelt;
 

@@ -9,7 +9,7 @@
 % Update:  2016-07-26
 % URL: https://github.com/mheriyanto/MH1DDC
 
-close all; clear all; clc;
+close all; clear; clc;
 format long;
 
 global x;
@@ -23,9 +23,9 @@ global lt;
 
 % Model 2
 load Model.txt
-models = Model(:,1);                                       
-modelr = [10,10,10];        % resistivity (Ohm-m)
-modelt = [10,10];           % thickness (m)
+models = Model(:,1);                          
+modelr = [100,60,30,10];    % resistivity (Ohm-m)   
+modelt = [10,15,30];        % thickness (m)
 mmodel = [modelr modelt];
 
 load data.txt;
@@ -33,9 +33,9 @@ x = data(:,1);              % space distance of electrode (AB/2)
 roa = data(:,2);            % resistivity for each electrode distance (observed)
 
 % initial model
-r = [5,5,5];             % initial resistivity (Ohm-m)     
-t = [5,5];               % iniial thickness (m)
-m = [r t];
+r = [50,50,50,50];           % initial resistivity (Ohm-m)    
+t = [20,20,20];              % iniial thickness (m)
+m = [r,t];
 
 lr = length(r); lt = length(t);
 kr = 10e-25;
@@ -51,7 +51,7 @@ while(iteration < maxiteration)
     t = m(1+lr:lr+lt);
 
     % firt calculated data (forward modeling)
-    for(i = 1:length(x))            % length of AB/2
+    for i = 1:length(x)            % length of AB/2
         s = data(i);                
         [g] = VES1DFWD(r,t,s);      % forward output 
         roa1(i,:) = g;              % apparent resistivity (calculated)
@@ -64,7 +64,7 @@ while(iteration < maxiteration)
     end
     
     [A] = jacobian(data,r,t,roa1);              % jacobian matrix
-    [U S V] = svd(A,0);    %U(nxp); S(pxp); V(pxp)  % singular value docimposition (SVD)
+    [U, S, V] = svd(A,0);    %U(nxp); S(pxp); V(pxp)  % singular value docimposition (SVD)
     ss = length(S);                                 % diagonal matrix (S)
     say = 1;                                        % L-th iteration
     k = 0;               
@@ -75,7 +75,8 @@ while(iteration < maxiteration)
         if(beta<10e-5)                          
             beta = 0.001*say;                   % epsilon = 0.001*L
         end 
-        for (i4 = 1:ss)
+        SS = zeros(ss,ss);
+        for i4 = 1:ss
             SS(i4,i4) = S(i4,i4)/(S(i4,i4)^2+beta);     %(diag(lamda)/(diag(lamda)+epsilon))
         end
         dmg = V*SS*U'*dd;               % equation: V*diag(lamda/lamda+epsilon)*U*delta d
@@ -83,7 +84,7 @@ while(iteration < maxiteration)
         r = mg(1:lr);                   % resistivity
         t = mg(1+lr:lr+lt);             % thickness
         
-        for(i5 = 1:length(x))
+        for i5 = 1:length(x)
             s = data(i5);
             [g] = VES1DFWD(r,t,s);
             roa4(i5,:) = g;             % apparent resistivity (calculated)
@@ -92,7 +93,6 @@ while(iteration < maxiteration)
         misfit2 = er2'*er2;
         
         if(misfit2 > misfit1)                      % misfit2 > misfit1
-            ('Beta control')
             say = say+1;                            % L = L+1
             k = k+1;               
             if(k == ss-1)                           % k == lamda length
@@ -119,7 +119,10 @@ while(iteration < maxiteration)
     end
 end
 
-for i = 1:length(b)
+lenb = length(b);
+errorplot = zeros(lenb);
+iter = zeros(lenb);
+for i = 1:lenb
     errorplot(i) = b(i,1);
     iter(i) = b(i,2);
 end
@@ -130,7 +133,7 @@ print('-dpng','SVD Final Inversion','-r500');
 figure(3)
 plot(iter,errorplot,'-','color','r','LineWidth',2);
 grid on
-title(['\bf \fontsize{12}\fontname{Times}Parameters of SVD Inversion']);
+title('\bf \fontsize{12}\fontname{Times}Parameters of SVD Inversion');
 xlabel('Iteration','fontweight','bold','fontsize',10);
 ylabel('RMS Error','fontweight','bold','fontsize',10);
 axis tight

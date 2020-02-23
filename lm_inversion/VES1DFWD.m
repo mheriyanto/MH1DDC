@@ -13,7 +13,9 @@ u = s*exp(-f*log(10)/m-x);      % 1/lamda
 l = length(r);
 n = 1;
 
-for i = 1:n+h
+li = n+h;
+a = zeros(li);
+for i = 1:li
     w = l;                  % w = i (n-1 th layer)
     T = r(l);               % T = T(lamda)
     while(w>1)

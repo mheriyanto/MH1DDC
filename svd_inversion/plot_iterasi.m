@@ -1,9 +1,8 @@
-function [rms_error,iteration] = plot_iterasi(m,roacal,iteration);
+function [rms_error,iteration] = plot_iterasi(m,roacal,iteration)
 %PLOT_AFTER Summary of this function goes here
 %   Detailed explanation goes here
 global x;
 global roa;
-global models;
 global modelr;
 global modelt;
 
@@ -53,7 +52,7 @@ grid on
 xlabel('Resistivity (Ohm-m)','fontweight','bold','fontsize',10);
 ylabel('Depth (m)','fontweight','bold','fontsize',10);
 set(gca,'XTick',[1e-3 1e-2 1e-1 1 1e1 1e2 1e3]);
-title(['\bf \fontsize{12} \fontname{Times}Model']);
+title('\bf \fontsize{12} \fontname{Times}Model');
 leg = legend('Real','SVD'); set(leg,'Location','South','fontsize',8);
 end
 

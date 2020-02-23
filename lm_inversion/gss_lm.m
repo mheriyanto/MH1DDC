@@ -41,10 +41,8 @@ end
 % chooses minimum point
 if(fx1 < fx2)
     xfinal = x1;
-    yfinal = fx1;
 else
     xfinal = x2;
-    yfinal = fx2;
 end
 
 end

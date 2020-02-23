@@ -9,7 +9,7 @@
 % Update: 2016-07-26
 % URL: https://github.com/mheriyanto/MH1DDC
 
-close all; clear all; clc;
+close all; clear; clc;
 
 global data;
 global ab;
@@ -48,7 +48,7 @@ r = m(1:lr);
 t = m(1+lr:lr+lt);
 
 % firt calculated data (forward modeling)
-for(i = 1:length(ab))
+for i = 1:length(ab)
     s = data(i);
     [g] = VES1DFWD(r,t,s);      % forward output 
     rhoa_cal(i,:) = g;          % apparent resistivity (calculated)
@@ -81,10 +81,10 @@ while(rms_err > kr)
     t = m(1+lr:lr+lt);              % thickness
      
     % find next model
-    for(i = 1:length(ab))
+    for i = 1:length(ab)
        s = data(i);
        [g] = VES1DFWD(r,t,s);
-       rhoa_cal(i,:) = g;
+       rhoa_cal(i) = g;
     end
      
     rms_err = norm(rhoa_cal-rhoa)/sqrt(length(rhoa));
@@ -119,7 +119,7 @@ print('-dpng','Plotting Lamda','-r500')
 figure(4)
 plot(iteration,rms_error,'-','color','r','LineWidth',2);
 grid on
-title(['\bf \fontsize{12}\fontname{Times}Parameters of LM Inversion']);
+title('\bf \fontsize{12}\fontname{Times}Parameters of LM Inversion');
 xlabel('Iteration','fontweight','bold','fontsize',10);
 ylabel('RMS Error','fontweight','bold','fontsize',10);
 axis tight

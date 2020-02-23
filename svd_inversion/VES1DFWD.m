@@ -13,7 +13,9 @@ u = s*exp(-f*log(10)/m-x);      % 1/lamda
 l = length(r);
 n = 1;
 
-for i = 1:n+h
+li = n+h;
+a = zeros(li);
+for i = 1:li
     w = l;                  % w = i (n-1 th layer)
     T = r(l);               % T = T(lamda)
     while(w>1)
@@ -31,4 +33,4 @@ rho_a = rho_a-4390*a(i+10)+13396*a(i+12)-27841*a(i+14);
 rho_a = rho_a+16448*a(i+16)+8183*a(i+18)+2525*a(i+20);
 rho_a = (rho_a+336*a(i+22)+225*a(i+24))/10000;
 
-returns
+return

@@ -3,7 +3,7 @@
 % Modified: M. Heriyanto and W. Srigutomo. 2016. Journal of Physics: Conference Series 877 (2017) 012066.
 % URL: https://github.com/mheriyanto/MH1DDC
 
-clc; clear all; close all;
+clc; clear; close all;
 
 % Model 3
 load Model.txt
@@ -11,7 +11,10 @@ s = Model(:,1);                                    % resistivity (Ohm-m)
 r = [10,10,10];                                     % thickness (m)
 t = [10,10];                                         % AB/2 (m)
 
-for ii = 1:length(s)
+ls = length(s);
+u = zeros(ls);
+rho_semu = zeros(ls);
+for ii = 1:ls
 q = 13;
 f = 10;
 m = 4.438;
@@ -22,7 +25,9 @@ u(ii) = s(ii)*exp(-f*log(10)/m-x);                 % 1/lamda
 l = length(r);
 n = 1;
 
-for i = 1:n+h
+li = n+h;
+a = zeros(li);
+for i = 1:li
     w = l;                                      % w = i (n-1 th layer)
     T = r(l);                                   % T = T(lamda)
     while(w>1)
@@ -61,14 +66,14 @@ set(gca,'XTick',[1 1e1 1e2 1e3]);
 %axis tight
 xlabel('AB/2 (m)','fontweight','bold','fontsize',10);
 ylabel('Rho App.(Ohm.m)','fontweight','bold','fontsize',10);
-title(['\bf \fontsize{12} Respons']);
+title('\bf \fontsize{12} Respons');
 grid on
 
 subplot(1,6,[5 6])
 stairs(rr,tt,'r','LineWidth',2);
 set(gca,'Ydir','reverse');
 set(gca,'Xscale','log');
-title(['\bf \fontsize{12} Model']);
+title('\bf \fontsize{12} Model');
 xlabel('Resistivity (Ohm.m)','fontweight','bold','fontsize',10);
 ylabel('Depth (m)','fontweight','bold','fontsize',10);    
 grid on

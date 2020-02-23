@@ -11,7 +11,7 @@ global data;
 
 r = m(1:lr);                    % resistivity value
 t = m(1+lr:lr+lt);              % thickness value
-for(i = 1:length(ab))          % AB/2 distance
+for i = 1:length(ab)          % AB/2 distance
     s = data(i);                % saving AB/2 on s varible
     [g] = VES1DFWD(r,t,s);      % forward TEST, output 
     roac1(i,:) = g;          % resistivitas hasil forward (calculated)

@@ -33,8 +33,4 @@ rho_a = rho_a-4390*a(i+10)+13396*a(i+12)-27841*a(i+14);
 rho_a = rho_a+16448*a(i+16)+8183*a(i+18)+2525*a(i+20);
 rho_a = (rho_a+336*a(i+22)+225*a(i+24))/10000;
 
-<<<<<<< HEAD
 return
-=======
-return
->>>>>>> accb85f8bddf952660463fdc0b4beccfa0342cc5

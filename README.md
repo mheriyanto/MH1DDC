@@ -64,6 +64,26 @@ Any updates about these scripts can be seen in [my blog](https://mheriyanto.word
 <img src="https://github.com/mheriyanto/MH1DDC/blob/master/svd_inversion/Model%203/Plotting%20Inversion%20Parameter.png" width="40%">
 </p>
 
+## Usage
+
+<ins>**LM Inversion**</ins>
+
+```console
+$ git clone https://github.com/mheriyanto/MH1DDC.git
+$ cd MH1DDC
+$ cd lm_inversion
+$ octave VES1DINV_LM.m
+```
+
+<ins>**SVD Inversion**</ins>
+
+```console
+$ git clone https://github.com/mheriyanto/MH1DDC.git
+$ cd MH1DDC
+$ cd svd_inversion
+$ octave VES1DINV_SVD.m
+```
+
 ## License
 MH1DDC is released under the MIT License (refer to the [LICENSE](https://github.com/mheriyanto/MH1DDC/blob/master/LICENSE) file for details).
 

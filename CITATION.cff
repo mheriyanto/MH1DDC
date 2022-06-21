@@ -9,7 +9,7 @@ version: v0.1.0
 date-released: 2020
 url: "https://github.com/mheriyanto/MH1DDC"
 preferred-citation:
-  type: inproceedings
+  type: conference-paper
   authors:
   - family-names: "Heriyanto"
     given-names: "Mohammad"

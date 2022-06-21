@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Heriyanto"
+  given-names: "Mohammad"
+  orcid: "https://orcid.org/0000-0003-2182-2866"
+title: "MH1DDC"
+version: v0.1.0
+date-released: 2020
+url: "https://github.com/mheriyanto/MH1DDC"
+preferred-citation:
+  type: inproceedings
+  authors:
+  - family-names: "Heriyanto"
+    given-names: "Mohammad"
+    orcid: "https://orcid.org/0000-0003-2182-2866"
+  - family-names: "Srigutomo"
+    given-names: "Wahyu"
+    orcid: "https://orcid.org/0000-0001-6483-2410"
+  doi: "10.1088/1742-6596/877/1/012066"
+  url: "https://doi.org/10.1088/1742-6596/877/1/012066"
+  journal: "Journal of Physics: Conference Series"
+  month: 7
+  publisher: "IOP Publishing"
+  start: 1 # First page number
+  end: 10 # Last page number
+  title: "1-D DC Resistivity Inversion Using Singular Value Decomposition and Levenberg-Marquardt’s Inversion Schemes"
+  issue: 1
+  volume: 877
+  year: 2017

@@ -28,3 +28,4 @@ preferred-citation:
   issue: 1
   volume: 877
   year: 2017
+  abstract: "Exploration of natural or energy resources requires geophysical survey to determine the subsurface structure, such as DC resistivity method. In this research, field and synthetic data were used using Schlumberger configuration. One-dimensional (1-D) DC resistivity inversion was carried out using Singular Value Decomposition (SVD) and Levenberg-Marquardt (LM) techniques to obtain layered resistivity structure. We have developed software to perform both inversion methods accompanied by a user-friendly interface. Both of the methods were compared one another to determine the number of iteration, robust to noise, elapsed time of computation, and inversion results. SVD inversion generated faster process and better results than LM did. The inversion showed both of these methods were appropriate to interpret subsurface resistivity structure."

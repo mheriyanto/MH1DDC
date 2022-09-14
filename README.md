@@ -77,7 +77,7 @@ $ octave VES1DINV_LM.m
 
 <ins>**SVD Inversion**</ins>
 
-```console
+```shell
 $ git clone https://github.com/mheriyanto/MH1DDC.git
 $ cd MH1DDC
 $ cd svd_inversion
@@ -89,8 +89,9 @@ MH1DDC is released under the MIT License (refer to the [LICENSE](https://github.
 
 ## Citation
 If you find this project useful for your research, please use the following BibTeX entry.
-    
-    @inproceedings{heriyanto20171,
+
+```BibTeX
+@inproceedings{heriyanto20171,
     title={1-D DC Resistivity Inversion Using Singular Value Decomposition and Levenberg-Marquardt’s Inversion Schemes},
     author={Heriyanto, M and Srigutomo, W},
     booktitle={Journal of Physics: Conference Series},
@@ -99,5 +100,6 @@ If you find this project useful for your research, please use the following BibT
     pages={066},
     year={2017},
     organization={IOP Publishing}
-    }
+}
+```
     
